@@ -32,6 +32,13 @@ Get an overall sense of SIZE of the data. roughtly 28,000 images at what pixel h
 
 Day 1 - ran into - how to get these images into their array of pixel values? 
 research: 
+https://machinelearningmastery.com/how-to-load-and-manipulate-images-for-deep-learning-in-python-with-pil-pillow/
+
+combined this with existing knowledge of matplotlib.pyplot and matplotlib.Image
+
+first obstacle - how to read in images as an array of pixel data? - solved
+second obstacle - how to create a dataframe out of this? because this dataframe will need to be written to a database.
+
 
 
 
