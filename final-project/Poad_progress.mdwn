@@ -2,4 +2,37 @@
 
 Project began on Feb 25, 2020
 
-Decided to use 
+Decided to use a Malaria Dataset
+<br> taken from https://lhncbc.nlm.nih.gov/publication/pub9932
+
+the plan is to use this dataset to build a predictive model on whether a new entry has malaria or not.
+
+Domain knowledge a bit to go into the staining process to identify malaria in cells, and then how to address visually.
+
+Interesting thing to note about the data
+* The CSV file for the uninfected class contains 201 entries since the normal cells from the infected patients’ slides also make it to the normal cell category (151+50 = 201)
+
+Remember that this will all be a Python file eventually, so pickle the model that you settle on. 
+
+plan - start a Jupyter notebook for relevant sections
+
+Day 1 target - read the images as arrays, take this data and store as a SQL database.
+(this will show Python knowledge)
+one table as infected, another table as uninfected
+
+Read in the SQL data to start the model (show SQL knowledge)
+concat the dataframes and create a target column to identify Malaria (1) or not (0)
+
+the Features of the dataset will be the array information itself.
+
+Review the image processing / neural network lesson - do i need to reduce the complexity of the images at all? 
+My images are very small, and few colors, but I have 27.5k of them to process.
+
+Get an overall sense of SIZE of the data. roughtly 28,000 images at what pixel height/width? 
+
+Day 1 - ran into - how to get these images into their array of pixel values? 
+research: 
+
+
+
+Day 2 target - read the SQL together, and concat the dataframes to create the dataset I need to be using. 
