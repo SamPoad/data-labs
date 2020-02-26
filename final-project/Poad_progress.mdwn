@@ -41,5 +41,50 @@ second obstacle - how to create a dataframe out of this? because this dataframe 
 
 
 
-
 Day 2 target - read the SQL together, and concat the dataframes to create the dataset I need to be using. 
+Next - work some heavy Principal Component Analysis (PCA) from Module-2 for reducing dimensionality of the images? 
+or reduce it to black and white based on whether the stain appears or not?
+
+
+
+
+### Overall plan
+read in and review the image data - exploratory
+
+read in the parasitized images
+convert to an array
+label as parasitized
+save that to a database table
+
+read in the normal images
+convert to an array
+label as non-parasitized
+save that to a database table
+
+read in the two tables
+concat/join/merge the dataframes
+confirm the ~50% split between Classes
+
+train_test_split the data
+
+Try a Regression Model to build a baseline
+
+keras.normalize between 0 and 1
+
+initialize a Sequential Model
+
+add input layers
+
+compile
+
+determine accuracy
+
+tweak the hyperparameters, determine accuracy at each step
+
+save the final model (pickle it)
+
+grab a few images and run .predict, using .imshow() and .imsave() to grab the images for presentation
+
+create a python file to import the model as a demo
+
+
