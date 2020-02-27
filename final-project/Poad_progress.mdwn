@@ -47,7 +47,6 @@ or reduce it to black and white based on whether the stain appears or not?
 
 
 
-
 ### Overall plan
 read in and review the image data - exploratory
 
