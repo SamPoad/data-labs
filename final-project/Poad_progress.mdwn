@@ -28,7 +28,7 @@ the Features of the dataset will be the array information itself.
 Review the image processing / neural network lesson - do i need to reduce the complexity of the images at all? 
 My images are very small, and few colors, but I have 27.5k of them to process.
 
-Get an overall sense of SIZE of the data. roughtly 28,000 images at what pixel height/width? 
+Get an overall sense of SIZE of the data. roughly 28,000 images at what pixel height/width? 
 
 Day 1 - ran into - how to get these images into their array of pixel values? 
 research: 
@@ -37,7 +37,9 @@ https://machinelearningmastery.com/how-to-load-and-manipulate-images-for-deep-le
 combined this with existing knowledge of matplotlib.pyplot and matplotlib.Image
 
 first obstacle - how to read in images as an array of pixel data? - solved
-second obstacle - how to create a dataframe out of this? because this dataframe will need to be written to a database.
+second obstacle - how to create a dataframe out of this? because this dataframe will need to be written to a database. while working on this, ran into...
+third obstacle - the images are not all the same dimensions, so I'll need to fill in those with null values (can my model handle
+null values? maybe continue with the [0, 0, 0,] for black that the images already use?)
 
 
 
@@ -46,12 +48,14 @@ Next - work some heavy Principal Component Analysis (PCA) from Module-2 for redu
 or reduce it to black and white based on whether the stain appears or not?
 Day 2 Actual - read in all the images and save to a SQL database
 images come in like 
-array([[[0., 0., 0.],
-        [0., 0., 0.],
-        [0., 0., 0.],
+array([[[0., 0., 0.], this is image1, row1, pixel1
+        [0., 0., 0.], this is image1, row1, pixel2
+        [0., 0., 0.], this is image1, row1, pixel3
         ...,
-which makes sense
-so i've read each of the parasitized image arrays into a dataframe. remember to git commit this. 
+so i've read each of the parasitized image arrays into a dataframe. remember to git commit this.
+but I need to instead build the dataframe so that it has columns for each pixel? so the 3 values for the pixel would be 
+a list of 3 numbers within that one cell?
+
 
 ### Overall plan
 read in and review the image data - exploratory
