@@ -44,8 +44,14 @@ second obstacle - how to create a dataframe out of this? because this dataframe 
 Day 2 target - read the SQL together, and concat the dataframes to create the dataset I need to be using. 
 Next - work some heavy Principal Component Analysis (PCA) from Module-2 for reducing dimensionality of the images? 
 or reduce it to black and white based on whether the stain appears or not?
-
-
+Day 2 Actual - read in all the images and save to a SQL database
+images come in like 
+array([[[0., 0., 0.],
+        [0., 0., 0.],
+        [0., 0., 0.],
+        ...,
+which makes sense
+so i've read each of the parasitized image arrays into a dataframe. remember to git commit this. 
 
 ### Overall plan
 read in and review the image data - exploratory
