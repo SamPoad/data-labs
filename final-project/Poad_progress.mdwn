@@ -40,8 +40,12 @@ first obstacle - how to read in images as an array of pixel data? - solved
 second obstacle - how to create a dataframe out of this? because this dataframe will need to be written to a database. while working on this, ran into...
 third obstacle - the images are not all the same dimensions, so I'll need to fill in those with null values (can my model handle
 null values? maybe continue with the [0, 0, 0,] for black that the images already use?)
-
-
+    so for both of the image_quantization and the neural_network exercises, we read in those arrays and flatten/ravel them 
+    so that the end result of the array is a string of rgbrgbrgb
+    similar to the neural network array used.
+    (spoke with instructor during this portion, recommended to treat the SQL save and load as a bonus)
+    worked a bit more on trying to read/append the arrays into a dataframe, decided to treat the collection as an array, and work 
+    out the train_test split of "features" and "target" using array math instead?
 
 Day 2 target - read the SQL together, and concat the dataframes to create the dataset I need to be using. 
 Next - work some heavy Principal Component Analysis (PCA) from Module-2 for reducing dimensionality of the images? 
@@ -55,30 +59,33 @@ array([[[0., 0., 0.], this is image1, row1, pixel1
 so i've read each of the parasitized image arrays into a dataframe. remember to git commit this.
 but I need to instead build the dataframe so that it has columns for each pixel? so the 3 values for the pixel would be 
 a list of 3 numbers within that one cell?
-
+end of day 2 - learned more about my image data, steps to process
 
 ### Overall plan
 read in and review the image data - exploratory
 
 read in the parasitized images
 convert to an array
+flatten the array, convert the RGB values to grayscale
+normalize/scale the data between 0 and 1 (is that what grayscale will be doing?)
+keras.normalize between 0 and 1
+throw this into a dataframe
 label as parasitized
-save that to a database table
+save that to a database table (optional bonus)
 
 read in the normal images
 convert to an array
+flatten the array, convert the RGB values to grayscale
+normalize/scale the data between 0 and 1 (is that what grayscale will be doing?)
+keras.normalize between 0 and 1
 label as non-parasitized
-save that to a database table
+save that to a database table (optional bonus)
 
-read in the two tables
+read in the two tables (optional bonus)
 concat/join/merge the dataframes
 confirm the ~50% split between Classes
 
 train_test_split the data
-
-Try a Regression Model to build a baseline
-
-keras.normalize between 0 and 1
 
 initialize a Sequential Model
 
