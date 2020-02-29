@@ -125,6 +125,10 @@ a problem for the neural network? can it handle that?
 next step - begin building the neural network. read up on tensorflow, keras, and the Sequential model
 this project will use DeepLearning to identify if malaria is present in a given cell image
 built the basic structure of the neural network out. now to run, play with hyperparameters and optional arguments to improve
+obstacle - my values for train_X, test_X, train_y, test_y were lists, not arrays like the model wants.
+obstacle: my train_X data is a list of image arrays, not a sequence of values like I thought.
+    potential solution - when reading in the image arrays, use np.concatenate instead of appending
+                need to git commit what i've got so far and then attempt to change. can always roll back if needed.
 
 
 ### Technologies Used
