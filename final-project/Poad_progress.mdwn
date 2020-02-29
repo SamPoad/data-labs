@@ -70,7 +70,7 @@ Ideas on the train-test split. read in the entire parasitized data, split the ar
 x uninfected images, take 15% away as test data (remaining x uninfected images)
 
 question - since the images are different sizes, the image arrays will be different sizes as well. is this going to present
-a problem for the neural network?
+a problem for the neural network? can it handle that?
 
 
 
