@@ -61,6 +61,19 @@ but I need to instead build the dataframe so that it has columns for each pixel?
 a list of 3 numbers within that one cell?
 end of day 2 - learned more about my image data, steps to process
 
+
+Day 3 - have to finish getting the dataframe completed, or figure out how to train-test-split the arrays appropriately
+plan is still to follow the neural network path (and later work to tweak the hyper-parameters)
+Ideas on the train-test split. read in the entire parasitized data, split the array after?
+(this might be a good thing for the SQL database to read in the data in random order like we did for subreddit recommender project)
+13,780 parasitized images, take 15% away as test data. (remaining 11,713 parasitized images)
+x uninfected images, take 15% away as test data (remaining x uninfected images)
+
+question - since the images are different sizes, the image arrays will be different sizes as well. is this going to present
+a problem for the neural network?
+
+
+
 ### Overall plan
 read in and review the image data - exploratory
 
