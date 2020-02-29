@@ -44,7 +44,7 @@ create a python file to import the model as a demo
 ### Improvements / Optionals
 have the data store as a SQLite database, and then read from that. 
 use multiple python files and a pickled model to show machine learning pipeline knowledge
-
+is a streamlit app or Python GUI relevant? 
 
 
 
@@ -129,6 +129,10 @@ obstacle - my values for train_X, test_X, train_y, test_y were lists, not arrays
 obstacle: my train_X data is a list of image arrays, not a sequence of values like I thought.
     potential solution - when reading in the image arrays, use np.concatenate instead of appending
                 need to git commit what i've got so far and then attempt to change. can always roll back if needed.
+planned solution: read in the first image in the directory as an array, and concatenate everything into it after that
+    will have to rework the train-test-split following this, but the data will be an array instead of a list, ready for the model. 
+    answer this question first - what about converting my list of arrays into an array of arrays? 
+
 
 
 ### Technologies Used
