@@ -139,6 +139,10 @@ find the maximum height, when reading in images, fill rows up that height with z
 current work-around is to use numpy reshape, with potential future improvement to fill in more black background on the other images
 got the data reading in in the format I want to use!!!
 so for example, my initial array of malaria-positive images has a shape of (13780, 150, 150)
+next step - clean up the jupyter notebook and apply this change to the Train_Test_split I have already done previously.
+Note: my np.reshape took the each image to an array of (150, 150) down from its original (164, 112, 3). Time permitting, reshape back 
+noticed that the data is between 0 and 1, but not normalized/scaled to 0 to 1. will use TensorFlow with Keras to adjust for this.
+takeaways from the day - look into Layers other than Dense, how about Convolutional and Map-Pooling Layers? 
 
 
 
