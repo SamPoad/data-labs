@@ -137,7 +137,8 @@ Day 4 - images are not all the same size, reviewed with instructor options
 for example, find the maximum width image, when reading in images, fill up to that point with zeros. 
 find the maximum height, when reading in images, fill rows up that height with zeros.
 current work-around is to use numpy reshape, with potential future improvement to fill in more black background on the other images
-
+got the data reading in in the format I want to use!!!
+so for example, my initial array of malaria-positive images has a shape of (13780, 150, 150)
 
 
 
