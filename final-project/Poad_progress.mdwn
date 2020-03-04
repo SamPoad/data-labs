@@ -133,6 +133,12 @@ planned solution: read in the first image in the directory as an array, and conc
     will have to rework the train-test-split following this, but the data will be an array instead of a list, ready for the model. 
     answer this question first - what about converting my list of arrays into an array of arrays? 
 
+Day 4 - images are not all the same size, reviewed with instructor options
+for example, find the maximum width image, when reading in images, fill up to that point with zeros. 
+find the maximum height, when reading in images, fill rows up that height with zeros.
+current work-around is to use numpy reshape, with potential future improvement to fill in more black background on the other images
+
+
 
 
 ### Technologies Used
