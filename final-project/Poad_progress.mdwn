@@ -143,11 +143,25 @@ next step - clean up the jupyter notebook and apply this change to the Train_Tes
 Note: my np.reshape took the each image to an array of (150, 150) down from its original (164, 112, 3). Time permitting, reshape back 
 noticed that the data is between 0 and 1, but not normalized/scaled to 0 to 1. will use TensorFlow with Keras to adjust for this.
 takeaways from the day - look into Layers other than Dense, how about Convolutional and Map-Pooling Layers? 
+also you can pickle a numpy array
+
+Day 5 - 
+my np.reshape is ruining the images
+instead of (150, 150), reshaped to (150, 150, 3) 
+didn't improve.
+try gray-scaling the images as they are read in? hm, library cv2 looks to require python2, not python3
+Tensor flow has modules for grayscaling, as well as crop+pad the image
+git commit, and then refactor for the crop/pad.
+see how that comes out, and potentially include a refactor for grayscaling
+
+
+
+
 
 
 
 ### Technologies Used
-pandas
+matplotlib
 numpy
-Google's TensorFlow 
-Keras
+DeepLearning: Google's TensorFlow, Keras
+
