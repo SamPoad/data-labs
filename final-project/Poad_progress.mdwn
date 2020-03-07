@@ -165,8 +165,9 @@ still at 50% model.
 looked at the images output, think the normalize is messing me up.
 going to commit what I have, then try 3 epochs without using the keras normalizer
 still at 50%
-let's try something other than Dense layers
-
+let's try more hidden layers, and if that doesn't work, something other than Dense layers
+unsuccessful. 
+digging into research, there are a ton more Tensorflow modules available, review and compile
 
 
 
