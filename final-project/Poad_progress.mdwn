@@ -164,6 +164,11 @@ was able to resize the images with padding using TensorFlow.
 still at 50% model.
 looked at the images output, think the normalize is messing me up.
 going to commit what I have, then try 3 epochs without using the keras normalizer
+still at 50%
+let's try something other than Dense layers
+
+
+
 
 
 ### Technologies Used
