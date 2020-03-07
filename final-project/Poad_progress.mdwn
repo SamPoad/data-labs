@@ -153,11 +153,17 @@ try gray-scaling the images as they are read in? hm, library cv2 looks to requir
 Tensor flow has modules for grayscaling, as well as crop+pad the image
 git commit, and then refactor for the crop/pad.
 see how that comes out, and potentially include a refactor for grayscaling
+so far, the time elapse has been prohibitively long for the grayscale or the resize using tensorflow...
+
+actually, reading in as a tensorflow object due to the rbg_to_grayscale / padding modules might let me skip some of the listcomp to array conversions.
+dtype of tensor already includes as a numpy array.
 
 
-
-
-
+Day 6 - 
+was able to resize the images with padding using TensorFlow.
+still at 50% model.
+looked at the images output, think the normalize is messing me up.
+going to commit what I have, then try 3 epochs without using the keras normalizer
 
 
 ### Technologies Used
