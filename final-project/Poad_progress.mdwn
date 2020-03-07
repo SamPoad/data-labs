@@ -168,7 +168,8 @@ still at 50%
 let's try more hidden layers, and if that doesn't work, something other than Dense layers
 unsuccessful. 
 digging into research, there are a ton more Tensorflow modules available, review and compile
-
+accuracy has increased.
+next steps: knock out presentation, then create a branch and fiddle more with the model, rolling back if necessary
 
 
 
